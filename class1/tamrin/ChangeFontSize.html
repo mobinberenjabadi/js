@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    #font{
+      font-size: 30px;
+      color: hotpink;
+      text-shadow: #1e1c1e 1px 1px 1px;
+    }
+  </style>
+</head>
+<body>
+  <div id="font">
+    ChangeFontSize
+  </div>
+  <br>
+  <button id="dec">
+    Dec
+  </button>
+  <button id="inc">
+    Inc
+  </button>
+
+  <script>
+    var font = document.getElementById('font')
+    var inc = document.getElementById('inc')
+    var dec = document.getElementById('dec')
+    var size = 30
+
+    inc.addEventListener('click',()=>{
+    size = size + 5;
+    font.style.fontSize = size + 'px';}
+    )
+    dec.addEventListener('click',()=>{
+      size = size - 5;
+      font.style.fontSize = size + 'px';}
+    )
+
+  </script>
+
+</body>
+</html>

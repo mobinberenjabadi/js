@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>selectors & document</title>
+</head>
+<body>
+
+    <input  onblur="console.log('blur')"
+            onfocus="console.log('focus')"
+            onkeydown="console.log('key down')"
+            onkeypress="console.log('key press')"
+            onkeyup="console.log('key up')"
+            onchange="console.log('changed')"
+           id="fullname" type="text">
+    <button onclick="showname()" type="button">
+    show
+    </button>
+    <p id="messagebox">
+
+    </p>
+<!--    behtar ast bejaye textarea estefade shavad-->
+<!--    <div contenteditable="" style="border: #222222 solid 1px;width: 200px;height: 200px" >-->
+<!--    </div>-->
+
+    <script>
+
+        function showname(){
+            let name = document.getElementById('fullname').value
+            // document.getElementById('messagebox').innerText = 'Hello ' + name eyne code paiin
+            let message = document.getElementById('messagebox')
+            message.innerText = 'hello ' + name
+            console.log(name)
+        }
+              //selectors//
+        //document.getElementById()
+        //document.getElementsByClassName()
+        //document.getElementsByName()
+        //document.getElementsByTagName()
+        //document.querySelectorAll(.className)
+        //document.querySelectorAll(#ID)
+        //document.querySelectorAll(tagname)
+
+
+    </script>
+</body>
+</html>

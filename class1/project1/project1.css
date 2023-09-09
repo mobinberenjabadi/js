@@ -1,0 +1,110 @@
+html,body{
+     width: 100vw;
+     height: 100vh;
+     padding: 0px;
+     margin: 0px;
+}
+
+/*Top Bar*/
+.topbar{
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     width: 100%;
+     height: 40px;
+     box-sizing: border-box;
+     background-color: #fff;
+     border-bottom: solid 1px #bababa;
+}
+.topbar div{
+     width: 20%;
+
+     text-align: left;
+     height: 100%;
+     box-sizing: border-box;
+}
+
+/*.topbar div:nth-child(odd){*/
+/*     background-color: #aefafa;*/
+/*}*/
+/**/
+/*.topbar div:nth-child(even){*/
+/*     background-color: aqua;*/
+/*}*/
+.topbar img{
+     margin: 5px;
+     height: 26px;
+}
+.topbar label{
+     position: absolute;
+     top: 7px;
+     font-family: Tahoma;
+     font-size: 18px;
+
+}
+/*Nav Bar*/
+.navbar{
+     margin-top: 40px;
+     width: 100%;
+     box-sizing: border-box;
+     height: 60px;
+     background-color: #fff;
+}
+.navbar ul{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     list-style: none;
+}
+.navbar ul li:nth-child(1){
+     border-left:#d1d1d1 solid 1px;
+
+}
+.navbar ul li a{
+     height: 60px;
+     box-sizing: border-box;
+     padding: 20px 85px;
+     height: 60px;
+     font-size: 16px;
+     font-weight: bold;
+     font-family: Tahoma;
+     color: #222;
+     text-decoration: none;
+     display: block;
+     border-right: #d1d1d1 solid 1px;
+}
+.navbar ul li a:hover{
+     background-color: #d1d1d1;
+}
+/*Slider*/
+.slider{
+     height: 200px;
+     background-color: #e3e0e0;
+
+}
+/*About*/
+.about{
+     height: 350px;
+     background-color: #fff;
+
+}
+/*News*/
+.news{
+     height: 300px;
+     background-color: #e3e0e0;
+}
+
+/*Cotact*/
+.contact{
+     height: 400px;
+     background-color: #fff;
+}
+/*Footer*/
+.footer{
+     height: 100px;
+     background-color: #222;
+}
