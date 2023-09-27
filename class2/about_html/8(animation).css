@@ -1,0 +1,28 @@
+div{
+    animation-name: animation;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+    animation-timing-function: inherit;
+    animation-direction: reverse;
+}
+@keyframes animation {
+    from{
+
+    }
+    to{
+
+    }
+    
+}
+@keyframes animation {
+    0%{
+
+    }
+    50%{
+
+    }
+    100%{
+        
+    }
+}
