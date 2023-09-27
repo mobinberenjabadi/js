@@ -20,4 +20,6 @@
     list-style: none;
     /*ezafe kardan matn*/
     content: 'x';
+    /*shekl mouse avaz mishavad*/
+    cursor: pointer;
 }
