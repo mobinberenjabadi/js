@@ -1,0 +1,65 @@
+:root{
+    --color1:red;
+    --color2:blueviolet;
+    --color3:blue;
+    --font-size1:18px;
+    --font-size2:20px;
+    --font-size3:24px;
+
+}
+.div1{
+    width: 30%;
+    height: 40px;
+    background-color: var(--color1);
+    color: white;
+    font-size: var(--font-size1);
+}
+.div2{
+    width: 30%;
+    height: 40px;
+    background-color: var(--color2);
+    color: white;
+    font-size: var(--font-size2);
+}
+.div3{
+    width: 30%;
+    height: 40px;
+    background-color: var(--color3);
+    color: white;
+    font-size: var(--font-size3)
+}
+
+/*
+   x-small max = 576px
+   small   min = 576px
+   medium  min = 768px
+   large   min = 992px
+   xlarge  min = 1200px
+   xxlarge min = 1400px
+*/
+
+@media screen and (max-width:991px) {
+
+
+    .div1 {
+        width: 30%;
+        height: 40px;
+        background-color: greenyellow;
+        color: white;
+    }
+
+    .div2 {
+        width: 30%;
+        height: 40px;
+        background-color: pink;
+        color: white;
+    }
+
+    .div3 {
+        width: 30%;
+        height: 40px;
+        background-color: black;
+        color: white;
+
+    }
+}

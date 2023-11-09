@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    function galleryApi(){
+      var root = document.getElementById('root')
+
+      fetch('http://universities.hipolabs.com/search?country=United+States').
+      then(response=>response.json()).
+      then(resultt=>{
+          var resultList = '<ul>'
+          for (var item of resultt){
+            resultList+=`
+            <li>
+                <h6>
+                    ${item.name}
+                </h6>
+                <small>
+                    ${item.web_pages}
+                </small>
+            </li>
+`
+          }
+          resultList += '</ul>'
+
+        root.innerHTML =resultList
+      } )
+
+    }
+    galleryApi()
+  </script>
+</body>
+</html>

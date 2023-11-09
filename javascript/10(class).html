@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>class</title>
+</head>
+<body>
+    <input  id="tasktitle"      >
+    <button id="createtaskbtn"  >
+        submit
+    </button>
+    <br>
+    <ul id="tasklist"></ul>
+  <script>
+      var tasktitle     = document.getElementById('tasktitle')
+      var createtaskbtn = document.getElementById('createtaskbtn')
+      var tasklist2     = document.getElementById('tasklist')
+
+      class Tasks{
+          constructor() {
+              var taskfromcookie = this.GetFromCookie()
+              this.tasklist = [];
+              if (typeof taskfromcookie == 'object' && taskfromcookie != '')
+              {
+                  this.tasklist = taskfromcookie
+              }
+
+          }
+          add(tasktitlevalue){
+              this.tasklist.push(tasktitlevalue)
+              this.SaveInCookie()
+
+          }
+          get(){
+              return this.tasklist;
+          }
+          SaveInCookie(){
+              var date   = new Date()
+              var exDate = date.setTime(date.getTime() + (24*60*60*1000))
+              document.cookie = `tasklist=${this.tasklist};expires=${exDate};path=/`
+          }
+          GetFromCookie(){
+              var cookie = document.cookie
+              cookie = cookie.replace('tasklist=','').split(',')
+              return cookie
+          }
+
+      }
+
+      createtaskbtn.addEventListener('click',savetask)
+
+      var task = new Tasks()
+      filltable()
+      function savetask(){
+          task.add(tasktitle.value)
+          tasktitle.value = ''
+          tasktitle.focus()
+          filltable()
+      }
+      function filltable(){
+          var tasklist = task.get()
+          tasklist2.innerHTML = ''
+
+          for (var taskitem of tasklist){
+              var li = document.createElement('li')
+              li.innerText = taskitem
+              tasklist2.append(li)
+          }
+      }
+
+  </script>
+</body>
+</html>

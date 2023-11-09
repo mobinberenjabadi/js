@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>selectors & document</title>
+</head>
+<body>
+
+    <input  onblur="console.log('blur')"
+            onfocus="console.log('focus')"
+            onkeydown="console.log('key down')"
+            onkeypress="console.log('key press')"
+            onkeyup="console.log('key up')"
+            onchange="console.log('changed')"
+           id="input" type="text">
+    <button id="btn" type="button">
+    show
+    </button>
+    <p id="messagebox">
+
+    </p>
+<!--    behtar ast bejaye textarea estefade shavad-->
+<!--    <div contenteditable="" style="border: #222222 solid 1px;width: 200px;height: 200px" >-->
+<!--    </div>-->
+
+    <script>
+        var btn         = document.getElementById('btn')
+        var input       = document.getElementById('input')
+        var messagebox  = document.getElementById('messagebox')
+
+        btn.addEventListener('click',showname)
+        function showname(){
+            messagebox.innerText = input.value
+            input.value = ''
+            input.focus()
+        }
+
+
+              //selectors//
+        //document.getElementById()
+        //document.getElementsByClassName()
+        //document.getElementsByName()
+        //document.getElementsByTagName()
+        //document.querySelectorAll(.className)
+        //document.querySelectorAll(#ID)
+        //document.querySelectorAll(tagname)
+
+
+    </script>
+</body>
+</html>
