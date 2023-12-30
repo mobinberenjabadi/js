@@ -3,44 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <title>mashin hesab</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .input1{
+            width: 25%;
+        }
+        .input2{
+            width: 25%;
+        }
+        .input3{
+            width: 25%;
+        }
+        .span1{
+            width: 65px;
+        }
+    </style>
 </head>
 <body>
-    <input id="num1" type="tel">
+    <div class="container-fluid">
 
-    <br>
+        <div class="input-group input1">
+            <span class="input-group-text" id="basic-addon1">width</span>
+            <input id="value1" type="text" class="form-control"  aria-describedby="basic-addon1" >
+        </div>
+        <div class="input-group mb-1 input2">
+            <span class="input-group-text span1" id="basic-addon2 ">height</span>
+            <input id="value2" type="text" class="form-control"  aria-describedby="basic-addon2" >
+        </div>
+        <button  id="calc" type="submit" class="btn btn-outline-primary">Calc</button>
+        <div class="input-group mt-1 input3">
+            <span class="input-group-text" id="basic-addon3">price</span>
+            <input type="email" class="form-control" aria-describedby="basic-addon3" id="result"  disabled>
+        </div>
 
-    <input id="num2" type="tel">
-
-    <br>
-    <br>
-
-    <button type="button" onclick="result('+')">+</button>
-    <button type="button" onclick="result('-')">-</button>
-    <button type="button" onclick="result('*')">*</button>
-    <button type="button" onclick="result('/')">/</button>
-
-    <div id="result">
-        0
     </div>
 
     <script>
+        var number1 = document.getElementById('value1')
+        var number2 = document.getElementById('value2')
+        var ewq     = document.getElementById('calc')
+        var result  = document.getElementById('result')
 
-
-        var result1 = document.getElementById('result')
-
-        function result(action)
-        {
-            var number1 = parseInt(document.getElementById('num1').value)
-            var number2 = parseInt(document.getElementById('num2').value)
-            if (action == '-')
-                result1.innerText = number1 - number2
-            if (action == '+')
-                result1.innerText = number1 + number2
-            if (action == '*')
-                result1.innerText = number1 * number2
-            if (action == '/')
-                result1.innerText = number1 / number2
+        ewq.addEventListener('click',calc)
+        function calc(){
+            result.value = number1.value * number2.value * 100000
+            number1.value = ''
+            number2.value = ''
+            if (result.value != NaN)
+                return 0
+            if (result.value == null)
+                return 0
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
     </script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script></body>
 </html>
