@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <div id="root">
+
+  </div>
+  <script>
+    var root = document.getElementById('root')
+    // var isLoop = true
+    // var number = 1
+    //
+    // while (isLoop)
+    // {
+    //   var span = document.createElement('span')
+    //   span.innerText = number
+    //   span.style.display = 'block'
+    //   root.append(span)
+    //   number++
+    //   if (number > 10)
+    //     isLoop = false
+    // }
+
+    var number = 1
+    // do 1bar ejra mishe majboran
+    do {
+        var span = document.createElement('span')
+        span.innerText = number
+        span.style.display = 'block'
+        root.append(span)
+        number++
+    }
+    while (number <= 10)
+  </script>
+</body>
+</html>
