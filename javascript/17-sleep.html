@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function sleep(ms)
+        {
+            return new Promise(resolve=>setTimeout(resolve,ms));
+        }
+
+        async function logSeconds(total)
+        {
+            for(var step = 0;step <= total;step++)
+            {
+                var date = new Date();
+                console.log(`Timer Item : ${step} in ${date.getSeconds()}`)
+                await sleep(1000)
+            }
+        }
+        logSeconds(60)
+    </script>
+</body>
+</html>
