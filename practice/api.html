@@ -7,14 +7,42 @@
 <body>
   <div id="root"></div>
   <script>
-    function galleryApi(){
-      var root = document.getElementById('root')
+//     function galleryApi(){
+//         var root = document.getElementById('root')
+//         var apiUrl = 'http://universities.hipolabs.com/search?country=United+States'
+//
+//         fetch(apiUrl).
+//         then(response=>response.json()).
+//         then(resultt=>{
+//           var resultList = '<ul>'
+//           for (var item of resultt){
+//             resultList+=`
+//             <li>
+//                 <h6>
+//                     ${item.name}
+//                 </h6>
+//                 <small>
+//                     ${item.web_pages}
+//                 </small>
+//             </li>
+// `
+//           }
+//           resultList += '</ul>'
+//
+//         root.innerHTML =resultList
+//       } )
+//     }
+//     galleryApi()
+    async function getData(){
+        var root    = document.getElementById('root')
+        var apiUrl  = 'http://universities.hipolabs.com/search?country=United+States'
 
-      fetch('http://universities.hipolabs.com/search?country=United+States').
-      then(response=>response.json()).
-      then(resultt=>{
-          var resultList = '<ul>'
-          for (var item of resultt){
+        var response        = await fetch(apiUrl)
+        var jsonResponse    = await response.json()
+        console.log(jsonResponse)
+        var resultList = '<ul>'
+          for (var item of jsonResponse){
+
             resultList+=`
             <li>
                 <h6>
@@ -29,10 +57,8 @@
           resultList += '</ul>'
 
         root.innerHTML =resultList
-      } )
-
     }
-    galleryApi()
+    getData()
   </script>
 </body>
 </html>
