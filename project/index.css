@@ -1,0 +1,280 @@
+/*head*/
+.header{
+    height: 80px;
+    background-color: rgb(43,43,43);
+    color: white;
+    font-size: 23px;
+    font-family: Tahoma;
+}
+.top-left{
+    position: relative;
+    top: 15px;
+    left: 15px;
+    font-size: 30px;
+}
+.top-right1{
+    position: relative;
+    top: 15px;
+    right: 35px;
+}
+.top-right2{
+    position: relative;
+    top: 15px;
+    right: 30px ;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(191,175,242);
+    text-align: center;
+}
+/*first-body*/
+.firstbody{
+    background-color:rgb(43,43,43);
+    height: 500px;
+}
+.firstbody-left{
+    height: 50%;
+    width: 50%;
+}
+.firstbody-left h1 {
+    font-family: Tahoma;
+    position: absolute;
+    top: 140px;
+    left: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    width: 460px;
+}
+
+.firstbody-left p{
+    font-family: Tahoma;
+    color: white;
+    width: 350px;
+    position: absolute;
+    top: 300px;
+    left: 150px;
+    opacity: 0.4;
+}
+.firstbody-left a {
+    position: absolute;
+    top: 420px;
+    left: 150px;
+}
+.firstbody-right{
+    position: absolute;
+    top: 105px;
+    border-radius: 20px;
+    height: 400px;
+    width: 500px;
+    background-color: rgb(51,51,51);
+}
+.firstbody-right-item1{
+    position: absolute;
+    top: 35px;
+    left: 30px;
+    background-color:rgb(43,43,43);
+    height: 130px;
+    width: 200px;
+    border-radius: 20px;
+}
+.firstbody-right-item1-text{
+    font-family: Tahoma;
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-decoration: underline rgb(235,202,120);
+}
+.firstbody-right-item1 img{
+    position: absolute;
+    top: 38px;
+    left: 49px;
+    width: 100px;
+    height: 80px;
+}
+.firstbody-right-item2{
+    position: absolute;
+    top: 35px;
+    right: 30px;
+    background-color:rgb(43,43,43);
+    height: 130px;
+    width: 200px;
+    border-radius: 20px;
+}
+.firstbody-right-item2-text{
+    font-family: Tahoma;
+    color: white;
+    padding-top: 8px;
+    padding-left: 10px;
+    text-decoration: underline rgb(235,202,120);
+}
+.firstbody-right-item2 img{
+    position: absolute;
+    top: 38px;
+    left: 25px;
+    width: 150px;
+    height: 80px;
+}
+.firstbody-right-item3{
+    position: absolute;
+    top: 200px;
+    right: 30px;
+    background-color:rgb(43,43,43);
+    height: 170px;
+    width: 441px;
+}
+.firstbody-right-item3-text{
+    font-family: Tahoma;
+    color: white;
+    padding-top: 8px;
+    padding-left: 10px;
+    text-decoration: underline rgb(235,202,120);
+}
+.firstbody-right-item3 img{
+    position: absolute;
+    top: 38px;
+    left: 70px;
+    width: 300px;
+    height: 125px;
+}
+/*secendBody*/
+.secendbody{
+    height: 200px;
+    background-color:rgb(43,43,43);
+    display: flex;
+    justify-content:space-evenly;
+}
+.secendbody-in{
+    opacity: 0.5;
+    width: 1080px;
+    background-color:rgb(43,43,43);
+    display: flex;
+    justify-content:space-evenly;
+    border-top: 1px white solid;
+    border-bottom: 1px white solid;
+    padding-top: 75px;
+}
+/*thirdbody*/
+.thirdbody{
+    height: 700px;
+    background-color:rgb(43,43,43);
+    position: relative;
+}
+.thirdbody div{
+    height: 550px;
+    width: 1080px;
+    background-color: rgb(253,245,223);
+    position: absolute;
+    top: 120px;
+    left: 130px;
+    border-radius: 20px;
+}
+.thirdbody div img {
+    position: absolute;
+    top: 85px;
+    left: 170px;
+}
+/*Fourthbody*/
+.fourthbody{
+    height: 450px;
+    background-color:rgb(43,43,43);
+}
+.fourthbody-cards{
+    padding-left: 190px;
+    padding-top: 80px;
+}
+/*firstfoot*/
+.firstfoot{
+    height: 550px;
+    background-color:rgb(43,43,43);
+    position: relative;
+}
+.firstfoot-in{
+    height: 450px;
+    width: 1000px;
+    background-color: rgb(191,175,242);
+    position: absolute;
+    top: 80px;
+    left: 170px;
+    border-radius: 20px;
+}
+.firstfoot-in p{
+    font-size: 20px;
+    width: 800px;
+    font-family: Tahoma;
+    position: absolute;
+    top: 100px;
+    left: 110px;
+
+}
+.firstfoot-in img{
+    position: absolute;
+    top: 250px;
+    left: 100px;
+}
+.secendfoot{
+    height: 600px;
+    background-color:rgb(43,43,43);
+    position: relative;
+}
+.secendfoot-left h1{
+    color: white;
+    font-size: 70px;
+    width: 300px;
+    font-family: Tahoma;
+    position: absolute;
+    top: 120px;
+    left: 180px;
+}
+.secendfoot-left p{
+    color: white;
+    font-size: 20px;
+    opacity: 0.5;
+    width: 350px;
+    position: absolute;
+    top: 350px;
+    left: 180px;
+    font-family: Tahoma;
+}
+.secendfoot-left a{
+    position: absolute;
+    top: 450px;
+    left: 180px;
+}
+.secendfoot-right-in{
+    height: 450px;
+    width: 550px;
+    background-color: rgb(217,239,235);
+    position: absolute;
+    top: 80px;
+    border-radius: 20px;
+}
+.secendfoot-right-in img{
+    position: absolute;
+    bottom: 80px;
+    left: 90px;
+}
+.thirdfoot{
+    background-color: rgb(43,43,43);
+    height: 250px;
+}
+.thirdfoot-in{
+    position: absolute;
+    left: 80px;
+    height: 300px;
+    width: 1200px;
+    border-top: 1px white solid;
+}
+.thirdfoot-in-left{
+    font-size: 40px;
+    font-family: Tahoma;
+    position: absolute;
+    top: 70px;
+    color: white;
+}
+.thirdfoot-in-right{
+    position: absolute;
+    right: 0px;
+    top: 60px;
+    color: white;
+}
+
